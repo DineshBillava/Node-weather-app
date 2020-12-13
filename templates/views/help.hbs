@@ -1,0 +1,12 @@
+{{>header}}
+    <div class="main_content">
+        <script src="/js/custom.js"></script>
+        <h1>{{message}}</h1>
+
+        <input type="text" name="search" id="search" placeholder="Seach location here">
+        <input type="button" value="Search" onclick="get_weather();">
+
+        <p id="forecast"></p>
+        <p id="location"></p>
+    </div>
+{{>footer}}
