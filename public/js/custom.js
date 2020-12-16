@@ -9,7 +9,7 @@ fetch('http://puzzle.mead.io/puzzle').then((response) => {
 function get_weather(){
     let location = document.getElementById('search').value
     
-    fetch('http://localhost:3000/weather?address='+location).then((response) => {
+    fetch('/weather?address='+location).then((response) => {
         response.json().then( (data) => {
             document.getElementById('forecast').innerHTML = data.forecast
             document.getElementById('location').innerHTML = data.location
